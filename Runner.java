@@ -28,6 +28,9 @@ public class Runner {
 		//Remove Vehicle by iD
 		garage.findRemoveVehicleiD(4);
 		
+		//To remove one vehicle in a type (Find Vehicle iD you want to delete)
+		garage.findVehicleiD("car");
+		
 		//Remove Vehicle by Type (Removes all in type)
 		garage.findRemoveVehicleType("car");
 		

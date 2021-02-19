@@ -38,6 +38,16 @@ public class Garage {
 			}
 		}
 	}
+	public void findVehicleiD (String X) {
+		System.out.println("The following results have been found for type: " + X);
+		for (int i = 0; i < Garage.size(); i++) {
+			Vehicle currentVehicle = Garage.get(i);
+			String y = currentVehicle.getvehicleType();
+			if (y == X) {
+				currentVehicle.print();
+			}
+		}
+	}
 	
 	public void findRemoveVehicleType (String X) {
 			for (int i = 0; i < Garage.size(); i++) {
