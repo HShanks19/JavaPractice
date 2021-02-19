@@ -1,21 +1,21 @@
 package VehicleChallenge;
 
 public class Motorbike extends Vehicle{
-	public Motorbike(String vehicleType, int vehicleiD, String vehicleMake, String vehicleColour, int yearMade, int motorbikeTax) {
+	public Motorbike(String vehicleType, int vehicleiD, String vehicleMake, String vehicleColour, int yearMade, double motorbikeTax) {
 		super(vehicleType, vehicleiD, vehicleMake, vehicleColour, yearMade);
 		this.setmotorbikeTax(motorbikeTax);
 	}
-	private int motorbikeTax;
+	private double motorbikeTax;
 
-	public int getmotorbikeTax() {
+	public double getmotorbikeTax() {
 		return motorbikeTax;
 	}
 	@Override
 	public double fixBill() {
-		int x = 2 * this.motorbikeTax;
+		double x = 2 * this.motorbikeTax;
 		return x;
 	}
-	public void setmotorbikeTax(int motorbikeTax) {
+	public void setmotorbikeTax(double motorbikeTax) {
 		this.motorbikeTax = motorbikeTax;
 	}
 	@Override

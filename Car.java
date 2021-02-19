@@ -10,21 +10,21 @@ public class Car extends Vehicle {
 	public String makeNoise() {
 		return "Beeeeep!";
 	}
-	public int getcarTax() {
+	public double getcarTax() {
 		return carTax;
 	}
 	@Override
 	public double fixBill() {
-		int x = 4 * this.carTax;
+		double x = 4 * this.carTax;
 		return x;
 	}
-	public void setcarTax(int carTax) {
+	public void setcarTax(double carTax) {
 		this.carTax = carTax;
 	}
 	
 	private int numberOfSeats;
 	
-	private int carTax;
+	private double carTax;
 
 	public int getnumberOfSeats() {
 		return numberOfSeats;
