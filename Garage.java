@@ -26,7 +26,8 @@ public class Garage {
 	public void fixSpecificBillVehicle(Vehicle car0) {
 		System.out.println("Bill has been generated for the following vehicle. Vehicle iD: " + car0.getVehicleiD() + " " + "Make: "+ car0.getVehicleMake());
 		car0.printBill();
-		}	
+	}	
+	
 	public void removeVehicle(Vehicle car0) {
 		Garage.remove(car0);
 	}
@@ -34,10 +35,9 @@ public class Garage {
 	public void findRemoveVehicleiD (int x) {
 		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
-			int y = currentVehicle.getVehicleiD();
-			if (y == x) {
+			if (currentVehicle.getVehicleiD() == x) {
 				removeVehicle(currentVehicle);
-				System.out.println("The following Vehicle has been removed. Vehicle iD: " + y);
+				System.out.println("The following Vehicle has been removed. Vehicle iD: " + currentVehicle.getVehicleiD());
 			}
 		}
 	}
@@ -45,21 +45,19 @@ public class Garage {
 		System.out.println("The following results have been found for type: " + X);
 		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
-			String y = currentVehicle.getvehicleType();
-			if (y == X) {
+			if (currentVehicle.getvehicleType() == X) {
 				currentVehicle.print();
 			}
 		}
 	}
 	
 	public void findRemoveVehicleType (String X) {
-			for (int i = 0; i < Garage.size(); i++) {
+		System.out.println("The following Vehicles have been removed.");	
+		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
-			String y = currentVehicle.getvehicleType();
-			int z = currentVehicle.getVehicleiD();
-			if (y == X) {
+			if (currentVehicle.getvehicleType() == X) {
 				removeVehicle(currentVehicle);
-				System.out.println("The following Vehicle has been removed. Vehicle iD: " + z);
+				System.out.println( "Vehicle iD: " + currentVehicle.getVehicleiD());
 			}
 		}
 	}
