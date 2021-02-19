@@ -23,7 +23,10 @@ public class Garage {
 			currentVehicle.printBill();
 		}
 	}
-	
+	public void fixSpecificBillVehicle(Vehicle car0) {
+		System.out.println("Bill has been generated for Vehicle: " + car0.getVehicleiD() + " " + "Make: "+ car0.getVehicleMake());
+		car0.printBill();
+		}	
 	public void removeVehicle(Vehicle car0) {
 		Garage.remove(car0);
 	}

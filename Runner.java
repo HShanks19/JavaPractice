@@ -22,8 +22,11 @@ public class Runner {
 		
 		garage.printGarage();
 		
-		//Fix Vehicle
+		//Fix Vehicle (Print All Bills)
 		garage.fixBillVehicle();
+		
+		//Fix Vehicle (Print 1 Bill)
+		garage.fixSpecificBillVehicle(car2);
 		
 		//Remove Vehicle by iD
 		garage.findRemoveVehicleiD(4);
