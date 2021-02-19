@@ -8,4 +8,9 @@ public class Boat extends Vehicle{
 	public String makeNoise() {
 		return "Honk!";
 	}
+	@Override
+	public double fixBill() {
+		int x = 1200;
+		return x;
+	}
 }

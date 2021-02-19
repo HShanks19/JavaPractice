@@ -17,19 +17,10 @@ public class Garage {
 		}
     }
 	
-	public void fixVehicle() {
+	public void fixBillVehicle() {
 		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
-			currentVehicle.print();
-			if (currentVehicle instanceof Car) {
-				System.out.println("Fixed Car Bill: £250");
-			} else if (currentVehicle instanceof Motorbike) {
-				System.out.println("Fixed Motorbike Bill: £50");
-			} else if (currentVehicle instanceof Boat) {
-				System.out.println("Fixed Boat Bill: £1050");
-			} else {
-				System.out.println("Unknown Vehicle: £5000");
-			}
+			currentVehicle.printBill();
 		}
 	}
 	
@@ -66,6 +57,22 @@ public class Garage {
 	}
 }
 
+// Old Billing Method
+//public void fixVehicle() {
+//	for (int i = 0; i < Garage.size(); i++) {
+//		Vehicle currentVehicle = Garage.get(i);
+//		currentVehicle.print();
+//		if (currentVehicle instanceof Car) {
+//			System.out.println("Fixed Car Bill: £250");
+//		} else if (currentVehicle instanceof Motorbike) {
+//			System.out.println("Fixed Motorbike Bill: £50");
+//		} else if (currentVehicle instanceof Boat) {
+//			System.out.println("Fixed Boat Bill: £1050");
+//		} else {
+//			System.out.println("Unknown Vehicle: £5000");
+//		}
+//	}
+//}
 	
 	
 	

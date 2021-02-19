@@ -5,12 +5,12 @@ public class Runner {
 		
 		Garage garage = new Garage();
 		
-		Car car1 = new Car("car", 1, "Vauxhall", "Grey", 2014, 6);		
-		Motorbike motorbike1 = new Motorbike("motorbike", 2, "Honda", "Red", 2019);
+		Car car1 = new Car("car", 1, "Vauxhall", "Grey", 2014, 6, 200);		
+		Motorbike motorbike1 = new Motorbike("motorbike", 2, "Honda", "Red", 2019, 150);
 		Boat boat1 = new Boat("boat", 3, "AVA Yachts", "White", 2012);
 		Boat boat2 = new Boat("boat", 4, "AVA Yachts", "Black", 2020);
-		Car car2 = new Car("car", 5, "BMW", "Black", 2018, 7);	
-		Motorbike motorbike2 = new Motorbike("motorbike", 6, "Honda", "Black", 2021);
+		Car car2 = new Car("car", 5, "BMW", "Black", 2018, 7, 200);	
+		Motorbike motorbike2 = new Motorbike("motorbike", 6, "Honda", "Black", 2021, 150);
 		
 		// adds Vehicles
 		garage.addVehicle(boat1);
@@ -23,7 +23,7 @@ public class Runner {
 		garage.printGarage();
 		
 		//Fix Vehicle
-		garage.fixVehicle();
+		garage.fixBillVehicle();
 		
 		//Remove Vehicle by iD
 		garage.findRemoveVehicleiD(4);

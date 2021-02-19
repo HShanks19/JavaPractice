@@ -23,11 +23,18 @@ public abstract class Vehicle {
 		System.out.println("Vehicle Profile:" + " Vehicle iD:" + this.getVehicleiD() + " Vehicle Make: " + this.getVehicleMake() + " Vehicle Colour: " + this.getVehicleColour() + " Year Made: " + this.getyearMade() + " " + this.makeNoise() );
 	}
 	public abstract String makeNoise();
+	
+	public abstract double fixBill();
+	
+	public void printBill() {
+		double cost = fixBill();
+		System.out.println("Bill for Vehicle: " + this.getVehicleiD() + " Amount: £" + cost);
+	}
 
-	 public String getvehicleType(){
+	public String getvehicleType(){
 	        return vehicleType;
 	}
-	 public void setvehicleType(String newvehicleType){
+	public void setvehicleType(String newvehicleType){
 	        this.vehicleMake = newvehicleType;
 	}
 	public int getVehicleiD(){
