@@ -5,11 +5,11 @@ public class Runner {
 		
 		Garage garage = new Garage();
 		
-		Car car1 = new Car("car", 1, "Vauxhall", "Grey", 2014, 6, 200);		
+		Car car1 = new Car("car", 1, "Vauxhall", "Grey", 2014, 6, 250);		
 		Motorbike motorbike1 = new Motorbike("motorbike", 2, "Honda", "Red", 2019, 150);
 		Boat boat1 = new Boat("boat", 3, "AVA Yachts", "White", 2012, 3500);
 		Boat boat2 = new Boat("boat", 4, "AVA Yachts", "Black", 2020, 1700);
-		Car car2 = new Car("car", 5, "BMW", "Black", 2018, 7, 200);	
+		Car car2 = new Car("car", 5, "BMW", "Black", 2018, 7, 210);	
 		Motorbike motorbike2 = new Motorbike("motorbike", 6, "Honda", "Black", 2021, 150);
 		
 		// adds Vehicles

@@ -11,6 +11,7 @@ public class Garage {
 	}
 	
 	public void printGarage() {
+		System.out.println("Vehicles in Garage: ");
 		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
 			currentVehicle.print();
@@ -18,6 +19,7 @@ public class Garage {
     }
 	
 	public void fixBillVehicle() {
+		System.out.println("All Vehicle Bills: ");
 		for (int i = 0; i < Garage.size(); i++) {
 			Vehicle currentVehicle = Garage.get(i);
 			currentVehicle.printBill();
