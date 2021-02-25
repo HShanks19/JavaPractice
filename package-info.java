@@ -1,1 +1,1 @@
-package VehicleChallenge;
+package com.qa.hashmaps;
